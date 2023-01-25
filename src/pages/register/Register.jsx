@@ -10,7 +10,7 @@ function Register() {
   const[email,setEmail] = useState("")
   const[password,setPassword] = useState("")
   const[error,setError] = useState(false)
-  axios.defaults.baseURL = 'http://localhost:3001/api';
+  axios.defaults.baseURL = 'https://orionblog-api.onrender.com/api';
 
   const handleSubmit = async (e) => {
     setError(false);

@@ -5,7 +5,7 @@ import { Context } from "../../context/Context";
 import "./login.scss";
 
 export default function Login() {
-  axios.defaults.baseURL = 'http://localhost:3001/api';
+  axios.defaults.baseURL = 'https://orionblog-api.onrender.com/api';
   const userRef = useRef();
   const passwordRef = useRef();
   const {dispatch, isFetching } = useContext(Context);

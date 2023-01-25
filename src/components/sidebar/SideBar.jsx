@@ -9,10 +9,10 @@ import { Context } from '../../context/Context';
 
 function SideBar() {
 
-  const PF = "http://localhost:3001/images/"
+  const PF = "https://orionblog-api.onrender.com/images/"
   const {user} = useContext(Context)
   const[cat,setCat] = useState([]);
-  axios.defaults.baseURL = 'http://localhost:3001/api';
+  axios.defaults.baseURL = 'https://orionblog-api.onrender.com/api';
 
   useEffect(() => {
     const getCat = async () => {

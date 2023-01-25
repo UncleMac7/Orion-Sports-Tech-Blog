@@ -11,7 +11,7 @@ import { useLocation } from 'react-router-dom';
 
 function Home() {
   const[posts,setPosts] = useState([]);
-  axios.defaults.baseURL = 'http://localhost:3001/api';
+  axios.defaults.baseURL = 'https://orionblog-api.onrender.com/api';
 
   const {search} = useLocation();
 

@@ -6,7 +6,7 @@ import { Context } from "../../context/Context";
 
 function Topbar() {
   const {user,dispatch} = useContext(Context);
-  const PF = "http://localhost:3001/images/"
+  const PF = "https://orionblog-api.onrender.com/images/"
 
   const handleLogout = () => {
     dispatch({type: "LOGOUT"});

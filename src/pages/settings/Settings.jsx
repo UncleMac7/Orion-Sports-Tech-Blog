@@ -8,7 +8,7 @@ import axios from 'axios'
 
 
 function Settings() {
-    axios.defaults.baseURL = 'http://localhost:3001/api';
+    axios.defaults.baseURL = 'https://orionblog-api.onrender.com/api';
     const [file, setFile] = useState("");
     const [username,setUsername] = useState("");
     const [email,setEmail] = useState("");
@@ -16,7 +16,7 @@ function Settings() {
     const [success,setSuccess] = useState(false);
 
     const {user, dispatch} = useContext(Context);
-    const PF = "http://localhost:3001/images/"
+    const PF = "https://orionblog-api.onrender.com/images/"
 
     const handleSubmit = async (e) =>{
         e.preventDefault();

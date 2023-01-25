@@ -8,11 +8,11 @@ import { Context } from '../../context/Context';
 import "./singlepost.scss"
 
 function SinglePost() {
-    axios.defaults.baseURL = 'http://localhost:3001/api';
+    axios.defaults.baseURL = 'https://orionblog-api.onrender.com/api';
     const location = useLocation();
     const path = location.pathname.split("/")[2];
     const[post,setPost] = useState({});
-    const PF = "http://localhost:3001/images/";
+    const PF = "https://orionblog-api.onrender.com/images/";
     const {user} = useContext(Context);
 
     useEffect(() =>{
